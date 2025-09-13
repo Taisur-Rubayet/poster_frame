@@ -76,7 +76,7 @@ cropBtn.addEventListener('click', () => {
   captionTextDiv.innerHTML = `
     ✨ 20 Years of Excellence ✨<br>
     🎉 DIU Textile Mega Carnival 2025 🎉<br>
-    Frame link: <a href="https://taisur-rubayet.github.io/poster-frame/" target="_blank">poster-frame link</a>
+    Frame link: <a href="https://taisur-rubayet.github.io/poster_frame/" target="_blank">poster-frame link</a>
   `;
   captionContainer.style.display = 'block';
 
@@ -86,7 +86,7 @@ cropBtn.addEventListener('click', () => {
 copyCaptionBtn.addEventListener('click', () => {
   const textToCopy = `✨ 20 Years of Excellence ✨
 🎉 DIU Textile Mega Carnival 2025 🎉
-Frame link: https://taisur-rubayet.github.io/poster-frame/`;
+Frame link: https://taisur-rubayet.github.io/poster_frame/`;
   navigator.clipboard.writeText(textToCopy)
     .then(()=> alert('Caption copied!'))
     .catch(()=> alert('Failed to copy caption.'));
@@ -98,3 +98,4 @@ downloadBtn.addEventListener('click', () => {
   link.href = canvas.toDataURL('image/png');
   link.click();
 });
+
