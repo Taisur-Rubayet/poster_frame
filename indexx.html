@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Textile Mega Carnival Poster</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.min.css"/>
+</head>
+<body>
+
+<h2>🎉 Textile Mega Carnival Poster Frame 🎉</h2>
+<p>Upload → Crop → Preview → Download</p>
+
+<input type="file" id="upload" accept="image/*" class="btn"><br>
+
+<div id="previewContainer">
+  <img id="uploadedImage">
+  <img id="frameImage" src="poster-frame.png">
+</div>
+<br>
+<button id="cropBtn" class="btn" style="display:none;">Crop & Apply Frame</button>
+<button id="downloadBtn" class="btn" style="display:none;">Download Poster</button>
+
+<!-- Caption container -->
+<div id="captionContainer">
+  <div id="captionText"></div>
+  <button id="copyCaptionBtn" class="btn">Copy Caption</button>
+</div>
+
+<canvas id="canvas" width="1080" height="1080"></canvas>
+<a id="madeByPage" href="https://taisur-rubayet.github.io/Profile-card/" target="_blank">Made by Taisur Rubayet</a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
